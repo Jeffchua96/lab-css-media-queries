@@ -5,26 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Queries</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script href="main.js"></script>
+    <style>
+      body{
+        background-color: black;
+      }
+      h1{
+        display:grid;
+        color:white;
+      }
+      li{
+        list-style: none;
+      }
+      p{
+        color: white;
+      }
+      column:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
   </head>
   <body>
-    <header>
-      <h1>TekNews</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Our Process</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="header">
+          <div class="title">
+            <h1  id="main"></h1>
+                <p>TekNews></p>
+                  <ul>
+                    <li>
+                      <a href="#">About</a>
+                    </li>
+                    <li>
+                      <a href="#">Our Process</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact Us</a>
+                    </li>
+                  </ul>
+            </h1>
+          </div>
+        </div>
+        </div>
     </header>
-    <section class="splash">
+
+    <section class="splash"/>
+      <img src="./images/ales-nesetril-unsplash.jpg"/>
       <h2>Your place for tech news!</h2>
     </section>
     <main>

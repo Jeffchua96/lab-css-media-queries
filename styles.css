@@ -3,12 +3,16 @@
   https://fonts.google.com/specimen/Righteous
 */
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+[class*="col-"] {
+  width: 100%;
+}
 
 /* General styles */
 
 html,
 body {
-  margin: 0;
+  background-color: black;
+  margin: 1rem;
   padding: 0;
 }
 
@@ -25,6 +29,7 @@ h4,
 h5,
 h6 {
   font-family: Righteous, serif;
+  color white;
   letter-spacing: 2px;
 }
 
@@ -38,7 +43,7 @@ header {
   text-align: center;
 
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-rows: 250px 1fr;
 }
 
 header h1 {
@@ -73,12 +78,14 @@ nav a:hover {
 
 .splash {
   background-image: url("./images/ales-nesetril-unsplash.jpg");
+  flex: wrap 10px; ;
   background-position: 50% 50%;
   background-size: 100%;
   border-bottom: 5px solid #de6b48;
 }
 
 .splash h2 {
+  display:none;
   color: #ececec;
   font-size: 5rem;
   margin: 0;
@@ -91,7 +98,7 @@ nav a:hover {
 main {
   margin: 3rem auto;
 
-  width: 70%;
+  width: 90%;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -133,7 +140,7 @@ footer {
   padding: 50px 15% 25px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 footer h4 {
@@ -163,3 +170,13 @@ footer a:hover {
 }
 
 /* Media queries */
+
+@media (min-width:768px) and (max-width:1279px){
+  .splash {
+    display:none
+  }
+  .main{
+    
+  }
+}
+@
