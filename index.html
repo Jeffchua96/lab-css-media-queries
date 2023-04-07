@@ -12,8 +12,7 @@
         background-color: black;
       }
       h1{
-        display:grid;
-        color:white;
+        display: grid;
       }
       li{
         list-style: none;
@@ -21,7 +20,19 @@
       p{
         color: white;
       }
-      column:after {
+      tech-container{
+        position:relative;
+        text-align: center;
+        color: white;
+        
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      columns{
       content: "";
       clear: both;
       display: table;
@@ -32,8 +43,9 @@
       <div class="container">
         <div class="header">
           <div class="title">
-            <h1  id="main"></h1>
-                <p>TekNews></p>
+            <h1>TekNews</h1>
+                
+                <nav>
                   <ul>
                     <li>
                       <a href="#">About</a>
@@ -45,17 +57,19 @@
                       <a href="#">Contact Us</a>
                     </li>
                   </ul>
-            </h1>
+                </nav>
           </div>
         </div>
-        </div>
+      </div>
     </header>
 
-    <section class="splash"/>
-      <img src="./images/ales-nesetril-unsplash.jpg"/>
-      <h2>Your place for tech news!</h2>
-    </section>
-    <main>
+    <splash>
+    <h2 class="tech-container">
+      <img src="./images/ales-nesetril-unsplash.jpg" style="width:100%;">
+      <div class="centered">Your place for Tech News</div>
+    </h2>
+    </splash>
+<main>
       <article>
         <img src="./images/c-d-x-unsplash.jpg" />
         <h3>The best headphones of this year</h3>
@@ -109,6 +123,7 @@
         </aside>
       </article>
     </main>
+  </div>
     <footer>
       <section>
         <h4>About</h4>
